@@ -1,0 +1,22 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #343a40;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+    color: white;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}

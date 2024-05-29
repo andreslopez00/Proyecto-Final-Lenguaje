@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés López Barrera - Contacto</title>
+    <link rel="icon" href="recursos/logoA.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Andrés López Barrera</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="aboutme.html">Conóceme</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h1>Contacto</h1>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="surname" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="surname" required>
+        </div>
+        <div class="mb-3">
+            <label for="gender" class="form-label">Género</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                    <label class="form-check-label" for="male">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                    <label class="form-check-label" for="female">Femenino</label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="reason" class="form-label">Motivo de la Consulta</label>
+            <select class="form-select" id="reason" required>
+                <option value="" selected disabled>Seleccione una opción</option>
+                <option value="project">Proyecto</option>
+                <option value="feedback">Comentarios</option>
+                <option value="other">Otros</option>
+            </select>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-0">© Andrés López Barrera</p>
+    </div>
+</footer>
+</body>
+</html>
