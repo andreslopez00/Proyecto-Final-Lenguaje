@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (contactForm) {
         contactForm.addEventListener('submit', function (event) {
             if (!validateForm()) {
-                event.preventDefault(); // Evita que el formulario se envíe si la validación falla
+                event.preventDefault(); 
             }
         });
     }
